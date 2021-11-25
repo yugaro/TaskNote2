@@ -10,7 +10,7 @@ const Stack = createNativeStackNavigator();
 export default function RootNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="ReduxTK">
         <Stack.Screen name="FlexBox" component={FlexBoxScreen} />
         <Stack.Screen name="Hello" component={HelloScreen} />
         <Stack.Screen name="ReduxTK" component={ReduxTKScreen} />
