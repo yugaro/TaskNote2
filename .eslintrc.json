@@ -8,11 +8,6 @@
         "airbnb"
     ],
     "parser": "@typescript-eslint/parser",
-    "settings": {
-        "import/resolver": {
-            "node": { "extensions":[".js", ".jsx", ".ts", ".tsx"]}
-        }
-    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -33,6 +28,12 @@
             2, {
                 "namedComponents": "function-declaration"
             }
-        ]
+        ],
+        "import/extensions": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": { "extensions":[".js", ".jsx", ".ts", ".tsx"]}
+        }
     }
 }
